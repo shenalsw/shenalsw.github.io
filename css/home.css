@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  background-color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 300;
+  background:#F9F6EE;
+  
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+
+.hero-image {
+  background-image: url("../images/homepage pic.webp");
+
+}
+
+#myid {
+  font-family: 'Charm', serif;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 300%;
+}
+
+#tea-sect{
+  background-color: #097968b0;
+  margin: 0 20px;
+  padding: 40px 0;
+  border-radius: 20px;
+}
+.tea-cont{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 30px;
+}
+.tea-cont p{
+  padding: 0;
+}
+
+P {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: large;
+  padding-left: 40px;
+  text-align: left;
+}
+
+.greentea {
+  display: inline-flex;
+  padding-left: 30px;
+}
+
+.whitetea {
+  display: inline-flex;
+  padding-left: 30px;
+
+}
+
+
+
+ul {
+  font-size: large;
+  
+
+}
+
+ol {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* List */
+.lists ul{
+  margin-left: 60px;
+  margin-top: 10px;
+}
+.list-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.gallery {
+  display:flex;
+  justify-content: center;
+}
+
+.gallery img{
+  width: 30%;
+  margin: 10px 10px;
+  border-radius: 10px;
+}
+
+#teas{
+  width: 300px;
+  height: auto;
+}
+
+h4{
+  margin-bottom: 10px;
+}
+@media (max-width: 1024px){
+  .tea-cont{
+    flex-direction: column;
+  }
+}
+@media (max-width: 425px){
+  #teas{
+    width: 250px;
+    height: auto;
+  }
+  .gallery{
+    flex-wrap: wrap;
+  }
+}

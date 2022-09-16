@@ -1,0 +1,201 @@
+
+p {
+  text-align: justify;
+}
+
+.hero-image {
+  background-image: url("../images/plantation.webp");
+ 
+}
+
+
+
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 30px;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+
+h3 {
+  font-family: 'Times New Roman', Times, serif;
+  text-indent: 4%;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: oblique;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.gallery {
+  margin: 5px;
+
+}
+
+#myid {
+  font-family: serif;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.pedro {
+  display: flex;
+  padding-left: 30px;
+  flex-direction: row;
+  gap: 30px 30px;
+  justify-content: space-evenly;
+
+}
+
+.damro{
+  display: flex;
+  padding-left: 30px;
+  flex-direction: row;
+  gap:30px 30px;
+  justify-content: space-evenly;
+}
+
+.dambatenne{
+  display: flex;
+  padding-left: 30px;
+  flex-direction: row;
+  gap: 30px 30px;
+  justify-content: space-evenly;
+    
+}
+
+P {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: large;
+  padding-left: 40px;
+}
+
+
+
+P {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  ;
+  text-indent: 1em;
+}
+
+ul {
+  font-size: large;
+
+}
+
+ol {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.list-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+
+
+#main{
+  padding-left: 20%;
+  border-radius: 25px;
+
+  }
+
+#pedro{
+  border: solid #097969;
+  width: 400px;
+  
+  
+ 
+} 
+
+
+.iframe{
+  display: flex;
+  align-items: center;
+  padding-left: 3%;
+  justify-content: space-evenly;
+
+}
+
+table {
+  table-layout:fixed;
+  margin: 15px auto;
+  border: 3px solid #097969; 
+  width:75%;
+}
+
+th{
+letter-spacing:2px;
+border-right: 1px solid black; 
+}
+ 
+ td {
+letter-spacing:2px;
+text-align:center;
+padding: 15px;
+border-bottom: solid black;
+
+
+  }
+
+tfoot td{
+text-align:left;
+}
+ 
+thead, tfoot {
+  
+  color: black;
+  
+  
+  }
+  tr:nth-of-type(2n) {
+    background-color:#D3D3D3;
+   }
+  
+   thead{ 
+    background-color: #D3D3D3;
+   }
+
+  tfoot{
+    background-color: #D3D3D3;
+  }
+
+  #caption{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+    Margin-bottom: 15px
+
+  }
+
+  @media (max-width:425px){
+    .pedro{
+      flex-direction: column;
+
+    }
+
+    #pedro{
+      width: 300px;
+    }
+
+    .damro{
+      flex-direction: column;
+
+    }
+
+  .dambatenne{
+    flex-direction: column;
+  }
+
+
+    
+  }

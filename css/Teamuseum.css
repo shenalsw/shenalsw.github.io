@@ -1,0 +1,64 @@
+
+p {
+  text-align: center;
+}
+
+.hero-image {
+  background-image: url("../images/museum pic1.webp");
+  
+}
+
+
+
+.museum {
+  margin: 1%;
+
+
+}
+
+#museumpics {
+  border: solid #097969;
+  width: 400px;
+}
+
+.Antique {
+  justify-content: left;
+  margin: 3%;
+}
+
+#museumpics2 {
+  width: 400px;
+  border-radius: 20px;
+}
+
+
+
+#visit {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  text-indent: 1%;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.iframe {
+  display: flex;
+  align-items: center;
+  padding-left: 3%;
+  justify-content: space-evenly;
+  margin-bottom: 4%;
+
+}
+
+footer {
+
+  padding: 5px;
+  background-color: #097969;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  justify-content: left;
+}
+
