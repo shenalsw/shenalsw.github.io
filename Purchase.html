@@ -30,7 +30,7 @@
             <div class="gotop">
                 <a href="#top">&#8593;</a>
             </div>
-            <a href="index.html"><img src="images/logo.webp" class="logo"></a>
+            <a href="index.html"><img src="images/logo.webp" class="logo" alt="logo"></a>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -38,7 +38,7 @@
                     <li><a href="Teamuseums.html">The Museum</a></li>
                     <li><a href="Byproducts.html">Products Made With Tea</a></li>
                     <li><a href="Purchase.html">Purchase & Donate</a></li>
-                    <li><a class="ts" href="teasales.html">Tea Sales</a>
+                    <li><a class="ts" href="#">Tea Sales</a>
                         <ul class="dropdown">
                         <li><a href="teasales.html">Tea Sales 1</a></li>
                         <li><a href="teasales2.html">Tea Sales 2</a></li>
@@ -59,15 +59,55 @@
             with exports dropping drastically.The Ceylon tea industry, which has existed for over 150 years is facing one
             of it's most challenging days. With inflation running high exports have now dropped drastically to its
             lowest level in over two decades.</h4>
-        <div class="card">
-            <h2 id="donate">Donations</h2>
-            <p> Your donation could directly help the tea industry in Sri Lanka in which many people depend on to make a living</p>
-            <div class="dnt-btn">
-                <a href="https://tealeaftrust.com/donate/" target="_blank"><img src="images/donate.webp" alt=""
-                        srcset=""></a>
-                <img src="images/donate 2.webp" alt="" srcset="" class="btn-img">
-            </div>
+
+            <div class="wrapper">
+                <div class="title">
+                  DONATIONS
+                </div>
+                
+                <form class="form">
+                   <div class="inputfield">
+                      <label for="cardname">Card Holder Name </label>
+                      <input type="text" class="input" required="required" maxlength="21" id="cardname"/>
+                   </div>  
+                    <div class="inputfield">
+                      <label for="address">Address</label>
+                      <input type="text" class="input" required="required" id="address"/>
+                   </div>  
+                
+                    
+                    <div class="inputfield">
+                      <label for="cardNum">Card Number</label>
+                      <input type="text" class="input" required="required" id="cardNum" maxlength="16">
+                   </div> 
+                   <div class="inputfield">
+                    <label for="cvc">CVV / CVC</label>
+                    <input type="text" class="input" required="required" id="cvc" maxlength="3">
+                 </div> 
+                 
+                 <div class="inputfield">
+                    <label>Donation Amount</label>
+                    <div class="custom_select" id="amount">
+                      <select>
+                        <option value="100">100 LKR</option>
+                        <option value="1000">1000 LKR</option>
+                        <option value="2000">2000 LKR</option>
+                        <option value="5000">5000 LKR</option>
+                        <option value="10000">10000 LKR</option>
+                      </select>
+                    </div>
+                 </div> 
+                 
+                <div class="inputfield">
+                  <button type="submit" class="btn" id="submit-btn" id="submit">Submit</button>
+                </div>
+              </form>	
         </div>
+        <div class="popup" id="popup">
+          <h2>Thank You!</h2>
+          <p id="message">Your donation was successful !</p>
+          <button type="button" id="ok-btn">OK</button>
+      </div>
         <h2 id="intro">Local Merchandise</h2>
         <div class="cont">
             <div class="card1">
@@ -139,5 +179,6 @@
             [Accessed: 10 september 2022]
              -->
         </footer> 
+        <script src="JS/donate.js"></script>
     </body>
 </html>

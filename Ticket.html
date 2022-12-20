@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/ticket.css">
+  <link rel="stylesheet" href="css/universal.css">
+  
+    <title>Ceylon Tea | Ticket Bookings </title>
+</head>
+
+<body>
+    <header>
+        <div class="container" id="top">
+          <div class="gotop">
+            <a href="#top">&#8593;</a>
+          </div>
+        
+
+          <a href="index.html"><img src="images/logo.webp" class="logo" alt="logo"></a>
+          
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="TeaPlantations.html">Tea Plantations</a></li>
+                    <li><a href="Teamuseums.html">The Museum</a></li>
+                    <li><a href="Byproducts.html">Products Made With Tea</a></li>
+                    <li><a href="Purchase.html">Purchase & Donate</a></li>
+                    <li><a class="ts" href="#">Tea Sales</a>
+                      <ul class="dropdown">
+                      <li><a href="teasales.html">Tea Sales 1</a></li>
+                      <li><a href="teasales2.html">Tea Sales 2</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1>Ticket Bookings</h1>
+        </div>
+    </div>
+    <form form class="form">
+    <div class="wrapper">
+        <div class="title">
+          Train Tours
+        </div>
+        <h2>GUESTS</h2>
+        <div class="form">
+           <div class="inputfield">
+              <label for="fname">First Name</label>
+              <input type="text" class="input" required="required" id="fname"/>
+           </div>  
+            <div class="inputfield">
+              <label for="lname">Last Name</label>
+              <input type="text" class="input" required="required" id="lname"/>
+           </div>  
+        
+            <div class="inputfield">
+              <label>Gender</label>
+              <div class="custom_select">
+                <select id="gender">
+                
+                  <option value="male" selected>Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+           </div> 
+            <div class="inputfield">
+              <label for="email">Email Address</label>
+              <input type="email" class="input" required="required" name="email" id="email">
+           </div> 
+           <div class="inputfield">
+            <label for="cnfrmmail">Confirm Email Address</label>
+            <input type="email" class="input" name="confirmmail" id="cnfrmmail">
+         </div> 
+          <div class="inputfield">
+              <label for="tel">Phone Number</label>
+              <input type="tel" class="input" required="required" name="phone" id="tel" maxlength="10" >
+           </div>
+           <h2>TICKET TYPE</h2>
+           <div class="inputfield">
+            <label for="adultnum">SL Adult</label>
+            <input type="number" name="num" class="input" min="1" required id="adultnum" onblur="costCalculation();"> 
+         </div>
+         <div class="inputfield">
+          <label for="childnum">SL Child (4-13 years)</label>
+          <input type="number" name="num" class="input" min="1" required id="childnum" onblur="costCalculation();"> 
+       </div>
+       <div class="inputfield">
+        <label for="fadult">Foreigner Adult</label>
+        <input type="number" name="num" class="input" min="1"  id="fadult" onblur="costCalculation();"> 
+     </div>
+     <div class="inputfield">
+      <label for="fchild">Foreigner Childㅤㅤㅤ(4-13 years)</label>
+      <input type="number" name="num" class="input" min="1" required id="fchild" onblur="costCalculation();"> 
+   </div>
+   <div class="inputfield">
+    <label>Infant Childㅤㅤㅤ (under for 4 years)</label>
+    <div class="free">FREE</div>
+ </div>
+           <h2>DATES</h2>
+           <div class="inputfield">
+            <label for="date">When are you coming?</label>
+            <input type="Date" class="input" required="required" id="date">
+         </div>
+         <h2>DURATION</h2>
+         <div class="inputfield">
+          <label>Tour Duration</label>
+          <div class="custom_select">
+            <select id="duration" onchange="costCalculation();">
+              
+              <option value="0">3 Hours</option>
+              <option value="1">1/2 Day</option>
+              <option value="2">Full Day</option>
+            </select>
+          </div>
+          
+         
+        </div>
+        <div class="inputfield">
+          <input type="button" value="Add to order" class="btn" id="add">
+          <input type="button" value="Check Loyalty" class="btn" id="loyalty">
+        </div>
+        <div class="inputfield">
+          <input type="button" value="Add to favorites" class="btn" id="addfav">
+          <input type="button" value="Order favorites" class="btn" id="oddfav">
+        </div>
+    </div>
+    <p id="Output"></p>
+  </form>	
+  <div>
+    <h2>Checkout</h2>
+
+    <table>
+      <tbody>
+        <tr>
+          <td for="price">Price Total</td>
+          <td>  <span id="price"></span></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+    
+    <div class="booknow">
+      <input type="submit" value="Book Now" class="btn" id="add" onclick="booknow();">
+    </div>
+  </div>
+  
+  
+       
+<script src="JS/main.js"></script>   
+</body>
+</html>
